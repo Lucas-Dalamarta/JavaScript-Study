@@ -16,7 +16,7 @@ console.log(lista.length);
 console.log(lista.join(" | "));
 
 //  Dict
-var Characthers = [{nome:"Luke",idade:23,sabre:false},{nome:"Yoda",idade:500,sabre:true}]
+var Characthers = [{nome:"Luke",idade:23,sabre:false},{nome:"Yoda",idade:500,sabre:true}];
 console.log(Characthers[1]);
 
 //  Conditionals

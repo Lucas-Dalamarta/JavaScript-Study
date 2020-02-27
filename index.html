@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
     <title>Minha Pagina</title>
 </head>
-<body>
- 
+<body onload="load()">
+    <button id="button" type="button" onclick="botao()">Mostrar o link!</button>
+    <h3 id="thanks" onclick="redirecionar()"></h3>
+    <h3 onmouseover="trocar(this)" onmouseout="trocar(this)">Mostrar o link!</h3>
+    <select onchange="carregaStatus(this)">
+        <option value="1">Mago</option>
+        <option value="2">Guerreiro</option>
+        <option value="3">Arqueiro</option>
+    </select>
+    <h6 id="status"></h6>
 </body>
 </html>
