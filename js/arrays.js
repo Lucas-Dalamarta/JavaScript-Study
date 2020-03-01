@@ -14,16 +14,10 @@ var Characthers = [
     { nome: "Rey", idade: 25, sabre: true }
 ];
 
-function retornaJedi(Personagens) {
+var retornaJedi = (Personagens) => {
     for (i in Personagens) {
-        if (Personagens[i].sabre === true) {
-            console.log(Personagens[i].nome + " é um Jedi , e sua idade é " + Personagens[i].idade + ".");
-        } else {
-            console.log(Personagens[i].nome + " não é um Jedi.");
-        }
+        Personagens[i].sabre ? mensagem = Personagens[i].nome + ' é um Jedi' : mensagem = Personagens[i].nome + ' não é um Jedi';
+        console.log(mensagem);
     }
-    return;
 }
-
-
 retornaJedi(Characthers);
