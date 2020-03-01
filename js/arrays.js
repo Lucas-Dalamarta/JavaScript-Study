@@ -21,3 +21,10 @@ var retornaJedi = (Personagens) => {
     }
 }
 retornaJedi(Characthers);
+
+
+var JediCharacthers =   Characthers.filter(function Jedi(Jedi) { return Jedi.sabre == true});
+var notJediCharacthers = Characthers.filter(function Jedi(Jedi) { return Jedi.sabre == false});
+
+console.log(JediCharacthers);
+console.log(notJediCharacthers);

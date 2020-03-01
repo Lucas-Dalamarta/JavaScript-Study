@@ -1,7 +1,6 @@
 //  Arrow Functions
 var trocar = (element) => {
-    element.innerHTML === 'Mostrar o link!' ? texto = 'Esconder o link!' : texto = 'Mostrar o link!';
-    element.innerHTML = texto;
+    element.innerHTML === 'Mostrar o link!' ? element.innerHTML = 'Esconder o link!' : element.innerHTML = 'Mostrar o link!';
 }
 
 var carregaStatus = (element) => {
@@ -20,8 +19,7 @@ var carregaStatus = (element) => {
 
 var botao = () => {
     element = document.getElementById("thanks");
-    element.innerHTML === '<p>Olha o meu GitHub!</p>' ? texto = '' : texto = '<p>Olha o meu GitHub!</p>';
-    element.innerHTML = texto;
+    element.innerHTML === '<p>Olha o meu GitHub!</p>' ? element.innerHTML = '' : element.innerHTML = '<p>Olha o meu GitHub!</p>';
 }
 
 var load = () => { alert("Pagina carregada com Sucesso!"); }
