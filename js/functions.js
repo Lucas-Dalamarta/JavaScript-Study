@@ -22,5 +22,4 @@ var botao = () => {
     element.innerHTML === '<p>Olha o meu GitHub!</p>' ? element.innerHTML = '' : element.innerHTML = '<p>Olha o meu GitHub!</p>';
 }
 
-var load = () => { alert("Pagina carregada com Sucesso!"); }
 var redirecionar = () => { window.open("https://github.com/Lucas-Dalamarta"); }
