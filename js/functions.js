@@ -1,13 +1,7 @@
 //  Arrow Functions
 var trocar = (element) => {
-    switch(element.innerHTML){
-        case    'Mostrar o link!':
-            element.innerHTML = "Esconder o link!";
-            break;
-        case    'Esconder o link!':
-            element.innerHTML = 'Mostrar o link!';
-            break;
-    }
+    element.innerHTML === 'Mostrar o link!' ? texto = 'Esconder o link!' : texto = 'Mostrar o link!';
+    element.innerHTML = texto;
 }
 
 var carregaStatus = (element) => {
@@ -26,14 +20,9 @@ var carregaStatus = (element) => {
 
 var botao = () => {
     element = document.getElementById("thanks");
-    switch (element.innerHTML) {
-        case '<p>Olha o meu GitHub!</p>':
-            element.innerHTML = '';
-            break;
-        case '':
-            element.innerHTML = '<p>Olha o meu GitHub!</p>';
-            break;
-    }
+    element.innerHTML === '<p>Olha o meu GitHub!</p>' ? texto = '' : texto = '<p>Olha o meu GitHub!</p>';
+    element.innerHTML = texto;
 }
+
 var load = () => { alert("Pagina carregada com Sucesso!"); }
 var redirecionar = () => { window.open("https://github.com/Lucas-Dalamarta"); }
